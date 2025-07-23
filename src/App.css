@@ -1,0 +1,222 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Appbar style goes here */
+.appbar-icons:hover{
+  color: #F25C05 !important;
+}
+.profile-menus{
+  color: #1C3D58 !important;
+  font-size: 14px !important;
+  padding-right:50px !important;
+}
+.profile-menus:hover{
+  background-color: #F25C05 !important;
+  color: #ffffff !important;
+  transition: 0.2s;
+  border-radius:5px;
+}
+
+/* Overview Cards Style goes here */
+
+.dashboard-head-content h3{
+    color: #1C3D58;
+}
+.dashboard-head-content p{
+    color: #6B6B6B;
+}
+.overview-cards{
+    border:1px solid #1c3d581b;
+    border-radius:8px;
+    box-shadow: 0px 1px 8px #1c3d582c;
+}
+.overview-cards h4{
+    color: #1C3D58;
+    font-size:22px;
+    font-weight: bold;
+}
+.overview-cards p{
+    font-size: 15px;
+    color: #6B6B6B;
+}
+.overview-cards .sub-text{
+    color: #1C3D58;
+}
+.overview-cards .inner-cards{
+    background-color: #F1F1F1;
+}
+.overview-cards .inner-cards p{
+    color: #265a84f3;
+}
+.stats-cards p{
+    color: #265a84f3;
+    font-size: 14px;
+}
+
+/* UserManagement page Style goes here */
+.add-users-btn{
+  background-color: #1C3D58 !important;
+  border: none;
+  color: #ffff;
+  font-size:14px;
+  padding: 8px 20px
+}
+.add-users-btn:hover{
+  background-color: #F25C05 !important;
+}
+.search-input{
+  padding: 8px 10px;
+  borderRadius: 5px !important;
+  border: 1px solid #1c3d5834;
+  outline: none;
+  fontSize: 14px !important;
+  color: #1C3D58 !important;
+}
+.search-input::placeholder{
+  color: #6B6B6B !important;
+  fontSize: 10px !important;
+}
+.search-input:focus{
+  box-shadow:none;
+  border-color: #1c3d5834;
+}
+.filter-btn{
+  background-color:transparent;
+  border: 1px solid #1c3d5834;
+  padding: 9px 10px;
+}
+.filter-btn:hover{
+  background-color: #F25C05 !important;
+  border: 1px solid #F25C05;
+  color: #ffff !important;
+}
+.filter-btn:focus{
+  background-color:transparent;
+  border: 1px solid #1c3d5834;
+}
+.filter-items{
+  font-size:13px;
+}
+.filter-items:hover{
+  background-color: #F25C05 !important;
+  color: #ffff;
+  border-radius: 5px;
+}
+.table thead th{
+  padding: 15px 12px !important;
+  color: #1C3D58 !important;
+  font-size: 15px !important;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.table tbody td{
+  padding: 18px 12px !important;
+  font-size: 13.5px;
+  color: #1C3D58;
+  white-space: nowrap;
+}
+
+.badge-pro {
+  background-color: #F25C05 !important;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-basic-free {
+  background-color: #254a681a !important;
+  color: #1C3D58;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-active {
+  background-color: #F25C05 !important;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-inactive {
+  background-color: #254a681a !important;
+  color: #1C3D58;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.no-caret::after {
+  display: none !important;
+}
+
+/* Drill Library Page Style goes here */
+.thumbnail-box{
+  background-color: #F1F1F1;
+  padding:80px 0px !important;
+}
+.thumbnail-box p{
+  color: #1c3d58a2;
+}
+.drillcards-heading h5{
+  color: #1C3D58;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.drillcards-heading .drill-icons{
+  color: #1C3D58;
+}
+.drillcards-heading .drill-icons:hover{
+  color: #F25C05;
+  cursor: pointer;
+}
+.drillcards-heading #delete-icon{
+  color: #e42319ff;
+  margin-left: 20px;
+}
+.drillcards-heading #delete-icon:hover{
+  color: #F25C05;
+}
+.drillcards-content p{
+  font-size: 13.5px;
+}
+.drillcards-content span{
+  background-color: #1c3d581a;
+  padding: 4px 10px;
+  color: #1C3D58;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.drillcards-content .advance-badge{
+  background-color: #fee2e2;  
+  color: #bf241cff;
+}
+.drillcards-content .beginner-badge{
+  background-color: #dcfce7;
+  color: #1d7054;
+}
+.drillcards-content .intermediate-badge{
+  background-color: #fef9c3;
+  color: #b78528ff;
+}
+
+
+/* media curies goes here */
+
+@media screen and (max-width: 640px){
+  .drillcards-heading h5{
+    font-size: 13px !important;
+  }
+  .drillcards-content p{
+    font-size: 12px !important;
+  }
+  .drillcards-heading #delete-icon{
+    margin-left: 8px !important;
+  }
+}
