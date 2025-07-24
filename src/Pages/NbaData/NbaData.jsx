@@ -65,7 +65,7 @@ const NbaData = () => {
       </div>
       <div className='row g-4'>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div>
                 <h4>164</h4>
                 <p style={{ fontSize: '14px' }}>Total Videos</p>
@@ -73,7 +73,7 @@ const NbaData = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div>
                 <h4>433</h4>
                 <p style={{ fontSize: '14px' }}>Total Annotations</p>
@@ -81,7 +81,7 @@ const NbaData = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div>
                 <h4>12</h4>
                 <p style={{ fontSize: '14px' }}>NBA Players</p>
@@ -89,7 +89,7 @@ const NbaData = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div>
                 <h4>8</h4>
                 <p style={{ fontSize: '14px' }}>Shot Types</p>
@@ -98,9 +98,10 @@ const NbaData = () => {
           </div>
       </div>
 
+      {/* Table */}
       <div className='p-3 pt-4 mt-4 overview-cards'>
-          <h4>NBA Reference Data</h4>
-        {/* Users Table */}
+        <h4>NBA Reference Data</h4>
+          {/* Users Table */}
         <div className="table-responsive" style={{width:'100%', overflowX: 'auto', maxWidth: '100%', }}>
           <Table hover className='table'>
             <thead>
@@ -152,6 +153,20 @@ const NbaData = () => {
               )}
             </tbody>
           </Table>
+        </div>
+      </div>
+
+      {/* Videos upload card */}
+      <div className='p-3 pt-4 mt-4 overview-cards'>
+        <h4>Upload New Reference Data</h4>
+        <div className='p-5 mt-3 text-center rounded-3 vedio-upload-card'>
+            <FileUploadOutlinedIcon className='mb-2 upload-icon'/>
+            <h4>Upload Video Files</h4>
+            <p>Drag and drop your NBA video references here, or click to browse</p>
+            <label for="file-upload" class="custom-file-upload">
+              Choose Files
+            </label>
+            <input id="file-upload" type="file" style={{display: 'none'}}/>
         </div>
       </div>
     </div>

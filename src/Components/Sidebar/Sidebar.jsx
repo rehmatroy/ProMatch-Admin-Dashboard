@@ -32,15 +32,15 @@ export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTra
   const drawer = (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent:'left' }}>
-        <img style={{ width: 70  }} src={Logo} alt="logo-img" />
+        <img style={{ width: 75  }} src={Logo} alt="logo-img" />
         <div style={{ paddingTop:'20px'}}>
-          <h4 style={{ marginBottom: 0, color: '#1C3D58', fontWeight: 600, fontSize: '18px' }}>Pro Match</h4>
-          <p style={{ marginTop: 0, color: '#6B6B6B', fontSize: '14px' }}>Admin Dashboard</p>
+          <h4 style={{ marginBottom: 0, color: '#ffffffff', fontWeight: 600, fontSize: '18px' }}>Pro Match</h4>
+          <p style={{ marginTop: 3, color: '#bfbbbbff', fontSize: '14px' }}>Admin Dashboard</p>
         </div>
       </div>
-      <Divider />
+      <Divider style={{border: '1px solid gray'}} />
       <List>
-        <p style={{ marginLeft: 20, color: '#6B6B6B', fontSize: '14px' }}>Main Menu</p>
+        <p style={{ marginLeft: 20, color: '#bfbbbbff', fontSize: '14px' }}>Main Menu</p>
         {menuItems.map((item) => (
         <ListItem key={item.text} className='ps-2 pe-2 pt-0'>
           <ListItemButton
@@ -50,7 +50,7 @@ export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTra
               borderRadius:'5px', 
               px: 2, py: 1,
               '&:hover': {
-                backgroundColor: '#f25c05a8',
+                backgroundColor: '#F25C05',
                 color: '#fff',
                 '& .MuiListItemIcon-root': { color: '#fff', transition: '0.3s' }
               },
@@ -61,7 +61,7 @@ export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTra
               }
             }}
           >
-            <ListItemIcon sx={{ minWidth: 40, color: '#1C3D58' }}>
+            <ListItemIcon sx={{ minWidth: 40, color: '#ffffff' }}>
               {item.icon}
             </ListItemIcon>
             <ListItemText primary={item.text} primaryTypographyProps={{ fontSize: 14 }} />
@@ -86,7 +86,8 @@ export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTra
           display: { xs: 'block', sm: 'none' },
           '& .MuiDrawer-paper': {
             width: drawerWidth,
-            backgroundColor: '#f9f9f9',
+            backgroundColor: '#1C3D58',
+            color:'#ffffff',
             boxSizing: 'border-box'
           }
         }}
@@ -101,7 +102,8 @@ export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTra
           display: { xs: 'none', sm: 'block' },
           '& .MuiDrawer-paper': {
             width: drawerWidth,
-            backgroundColor: '#f9f9f9',
+            backgroundColor: '#1C3D58',
+            color:'#ffffff',
             boxSizing: 'border-box'
           }
         }}

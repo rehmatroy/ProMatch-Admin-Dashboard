@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  /* background-color: #1C3D58 !important; */
 }
 
 /* Appbar style goes here */
@@ -37,6 +38,7 @@ body{
     color: #1C3D58;
     font-size:22px;
     font-weight: bold;
+    margin-bottom:5px;
 }
 .overview-cards p{
     font-size: 15px;
@@ -58,7 +60,7 @@ body{
 
 /* UserManagement page Style goes here */
 .add-users-btn{
-  background-color: #1C3D58 !important;
+  background-color: #1b4b72ff !important;
   border: none;
   color: #ffff;
   font-size:14px;
@@ -205,6 +207,75 @@ body{
   background-color: #fef9c3;
   color: #b78528ff;
 }
+
+/* NBA Data page style */
+.vedio-upload-card{
+  border: 2px dashed #6b6b6b46;
+}
+.vedio-upload-card .upload-icon{
+  color: #1c3d58d1;
+  font-size: 48px;
+}
+.vedio-upload-card h4{
+  font-size: 18px;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B6B6B;
+  background-color: transparent ;
+  transition: 0.2s;
+}
+.custom-file-upload:hover {
+  background-color: #F25C05;
+  color: #ffffff;
+  border: 1px solid #F25C05;
+}
+
+/* Notification page style */
+.notification-icons{
+  color: #F25C05;
+  font-size: 30px !important;
+}
+
+.notification-content-cards h4{
+  font-size:20px !important;
+}
+.notification-content-cards h5{
+  color: #1C3D58;
+  font-size: 16px;
+}
+.notification-content-cards span{
+  color: #6B6B6B;
+  font-size: 14px;
+  margin-right: 12px; 
+}
+.notification-btns{
+  background-color: transparent;
+  color: #1C3D58;
+  border: 1px solid #ccc;
+  font-size: 14px; 
+}
+.notification-btns:hover{
+  background-color: #F25C05 !important;
+  border: 1px solid #F25C05;
+}
+.Analytics-card h4{
+    color: #1C3D58;
+    font-size:22px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+.Analytics-card p{
+    font-size: 14px;
+    color: #6B6B6B;
+}
+
 
 
 /* media curies goes here */

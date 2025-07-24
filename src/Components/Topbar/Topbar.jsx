@@ -18,7 +18,7 @@ import '../../App.css'
 const drawerWidth = 240;
 
 
-export default function Topbar({ handleDrawerToggle }) {
+export default function Topbar({ handleDrawerToggle })  {
   const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
 
@@ -29,9 +29,9 @@ export default function Topbar({ handleDrawerToggle }) {
       sx={{
         width: { sm: `calc(100% - ${drawerWidth}px)` },
         ml: { sm: `${drawerWidth}px` },
-        backgroundColor: '#fbfcfd',
-        color: '#1C3D58',
-        boxShadow: '0px 1px 8px #cdcdcdff'
+        backgroundColor: '#1C3D58',
+        color: '#ffffff',
+        boxShadow: '0px 1px 8px #1c3d58e8'
       }}
     >
       <Toolbar sx={{ justifyContent: 'space-between' }}>
@@ -60,7 +60,7 @@ export default function Topbar({ handleDrawerToggle }) {
                 width: '100%',
                 padding: '10px 12px 8px 36px',
                 borderRadius: '5px',
-                border: '1px solid #1c3d5834',
+                border: '1px solid #1C3D58',
                 outline: 'none',
                 fontSize: '14px',
                 color: '#1C3D58',
@@ -91,7 +91,7 @@ export default function Topbar({ handleDrawerToggle }) {
           </IconButton>
 
           {/* Profile */}
-          <Box sx={{ position: 'relative' }}>
+          <Box sx={{ position: 'relative'}}>
             <IconButton onClick={(e) => setAnchorEl(e.currentTarget)}>
               <img
                 src={ProfileImg}

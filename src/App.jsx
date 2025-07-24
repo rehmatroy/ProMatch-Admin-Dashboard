@@ -1,4 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+
 
 // import bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,7 +23,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<DashboardLayout />}>
-          <Route path="dashboard" element={<Dashboard/>} />
+          <Route index element={<Navigate to="/dashboard" />} />
+          <Route path='dashboard' element={<Dashboard/>} />
           <Route path="user-management" element={<UserManagement />} />
           <Route path="drill-library" element={<DrillLibrary />} />
           <Route path="nba-data" element={<NbaData />} />

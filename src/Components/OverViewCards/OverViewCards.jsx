@@ -21,7 +21,7 @@ const OverViewCards = () => {
         </div>
         <div className='row g-4'>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div className='d-flex justify-content-between'>
                 <p>Total Users</p>
                 <GroupOutlinedIcon style={{ color: '#F25C05', fontSize: '20px' }} />
@@ -33,7 +33,7 @@ const OverViewCards = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div className='d-flex justify-content-between'>
                 <p>Active Subscribers</p>
                 <TrendingUpIcon style={{ color: '#F25C05', fontSize: '20px' }} />
@@ -45,7 +45,7 @@ const OverViewCards = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div className='d-flex justify-content-between'>
                 <p>Monthly Revenue</p>
                 <AttachMoneyIcon style={{ color: '#F25C05', fontSize: '20px' }} />
@@ -57,7 +57,7 @@ const OverViewCards = () => {
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 overview-cards'>
+            <div className='p-3 pt-4 h-100 overview-cards'>
               <div className='d-flex justify-content-between'>
                 <p>Drills Completed Today</p>
                 <PlayCircleOutlineIcon style={{ color: '#F25C05', fontSize: '20px' }} />
