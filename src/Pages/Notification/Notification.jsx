@@ -69,7 +69,7 @@ const Notification = () => {
             <h4>All Notifications</h4>
             <div className='d-flex justify-content-between border rounded-3 p-3 mt-4'>
               <div>
-                <h5>New Drill Release</h5>
+                <h5 className='fw-bold'>New Drill Release</h5>
                 <p className='mt-3 mb-2'>Check out our latest Advanced Shooting drill!</p>
                 <div>
                   <span>Type: Push</span>
@@ -88,7 +88,7 @@ const Notification = () => {
             </div>
             <div className='d-flex justify-content-between border rounded-3 p-3 mt-4'>
               <div>
-                <h5>Weekly Progress Report</h5>
+                <h5 className='fw-bold'>Weekly Progress Report</h5>
                 <p className='mt-3 mb-2'>Your weekly training summary is ready.</p>
                 <div>
                   <span>Type: Email</span>
@@ -107,7 +107,7 @@ const Notification = () => {
             </div>
             <div className='d-flex justify-content-between border rounded-3 p-3 mt-4'>
               <div>
-                <h5>Subscription Reminder</h5>
+                <h5 className='fw-bold'>Subscription Reminder</h5>
                 <p className='mt-3 mb-2'>Your subscription expires in 3 days.</p>
                 <div>
                   <span>Type: Push</span>

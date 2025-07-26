@@ -25,7 +25,7 @@ const menuItems = [
   { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications' },
   { text: 'Analytics', icon: <BarChartIcon />, path: '/analytics' },
   { text: 'Settings', icon: <SettingsIcon />, path: '/settings' },
-  { text: 'Logout', icon: <LogoutIcon />, path: '/logout' },
+  { text: 'Logout', icon: <LogoutIcon />, path: '/login' },
 ];
 
 export default function Sidebar({ mobileOpen, handleDrawerClose, handleDrawerTransitionEnd, container }) {

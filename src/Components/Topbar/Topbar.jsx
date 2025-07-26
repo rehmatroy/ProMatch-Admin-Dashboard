@@ -113,7 +113,7 @@ export default function Topbar({ handleDrawerToggle })  {
                 <SettingsIcon fontSize="small" /> Settings
               </MenuItem>
               <Divider />
-              <MenuItem onClick={() => navigate('/account/logout')} sx={{ gap: 1 }} className="profile-menus">
+              <MenuItem onClick={() => navigate('/account/login')} sx={{ gap: 1 }} className="profile-menus">
                 <LogoutIcon fontSize="small" /> Logout
               </MenuItem>
             </Menu>

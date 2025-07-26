@@ -208,7 +208,7 @@ body{
   color: #b78528ff;
 }
 
-/* NBA Data page style */
+/* NBA Data page style goes here */
 .vedio-upload-card{
   border: 2px dashed #6b6b6b46;
 }
@@ -237,7 +237,7 @@ body{
   border: 1px solid #F25C05;
 }
 
-/* Notification page style */
+/* Notification page style goes here */
 .notification-icons{
   color: #F25C05;
   font-size: 30px !important;
@@ -248,7 +248,7 @@ body{
 }
 .notification-content-cards h5{
   color: #1C3D58;
-  font-size: 16px;
+  font-size: 14px;
 }
 .notification-content-cards span{
   color: #6B6B6B;
@@ -275,11 +275,32 @@ body{
     font-size: 14px;
     color: #6B6B6B;
 }
+/* Setting page style goes here */
 
+.notification-content-cards .setting-input{
+  font-size: 14px;
+  color: #6B6B6B;
+}
+.notification-content-cards .setting-input:focus{
+  outline: none;
+}
+
+/* Login page style is goes here */
+.login-section {
+  background-color: #1C3D58;
+  min-height: 100vh;
+  padding-top: 50px;
+}
 
 
 /* media curies goes here */
-
+@media screen and (max-width: 992px){
+  .notification-content-cards .setting-input-head{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 640px){
   .drillcards-heading h5{
     font-size: 13px !important;
@@ -290,4 +311,11 @@ body{
   .drillcards-heading #delete-icon{
     margin-left: 8px !important;
   }
+}
+
+@media screen and (max-width: 572px){
+  .css-1v5u2yv{
+    padding: 12px !important;
+  }
+
 }

@@ -15,7 +15,7 @@ import Notification from './Pages/Notification/Notification';
 import Analytics from './Pages/Analytics/Analytics';
 import Profile from './Pages/Profile/Profile';
 import Setting from './Pages/Setting/Setting';
-import Logout from './Pages/Logout/Logout';
+import Login from './Pages/Login/Login';
 
 
 function App() {
@@ -32,12 +32,12 @@ function App() {
           <Route path="analytics" element={<Analytics />} />
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Setting />} />
-          <Route path="logout" element={<Logout />} />
+          <Route path="login" element={<Login />} />
 
           {/* topbar routes */}
           <Route path="account/profile" element={<Profile />} />
           <Route path="account/settings" element={<Setting />} />
-          <Route path="account/logout" element={<Logout />} />
+          <Route path="account/login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>

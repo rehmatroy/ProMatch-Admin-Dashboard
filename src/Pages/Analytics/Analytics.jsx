@@ -100,27 +100,28 @@ const Analytics = () => {
           </div>
         </div>
 
-        <div className='row g-4 mt-0'>
+        <div className='row g-4 mt-4 ms-0 me-0 ps-1 pe-1 overview-cards'>
+          <h4 className='fs-5 mb-0'>Detailed Metrics</h4>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 h-100 text-center Analytics-card'>
+            <div className='p-3 pt-3 h-100 text-center Analytics-card'>
                 <h4>8.4m</h4>
                 <p>Session Duration (avg)</p>
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 h-100 text-center Analytics-card'>
+            <div className='p-3 pt-3 h-100 text-center Analytics-card'>
                 <h4>127</h4>
                 <p>Users Online Now</p>
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 h-100 text-center Analytics-card'>
+            <div className='p-3 pt-3 h-100 text-center Analytics-card'>
                 <h4>89.2%</h4>
                 <p>User Retention (30d)</p>
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className='p-3 pt-4 h-100 text-center Analytics-card'>
+            <div className='p-2 pt-3 h-100 text-center Analytics-card'>
                 <h4>$18.50</h4>
                 <p>ARPU (Monthly)</p>
             </div>
