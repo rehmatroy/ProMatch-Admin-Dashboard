@@ -106,14 +106,15 @@ export default function Topbar({ handleDrawerToggle })  {
             >
               <p style={{ marginLeft: 16, color: '#6B6B6B', fontSize: '14px' }}>Admin Account</p>
               <Divider />
-              <MenuItem onClick={() => navigate('/account/profile')} sx={{ gap: 1 }} className="profile-menus">
+              <MenuItem onClick={() => navigate('/profile')} sx={{ gap: 1 }} className="profile-menus">
                 <PeopleIcon fontSize="small" /> Profile
               </MenuItem>
-              <MenuItem onClick={() => navigate('/account/settings')} sx={{ gap: 1 }} className="profile-menus">
+
+              <MenuItem onClick={() => navigate('/settings')} sx={{ gap: 1 }} className="profile-menus">
                 <SettingsIcon fontSize="small" /> Settings
               </MenuItem>
-              <Divider />
-              <MenuItem onClick={() => navigate('/account/login')} sx={{ gap: 1 }} className="profile-menus">
+              <Divider style={{border: '1px solid darkgray'}}/>
+              <MenuItem onClick={() => navigate('/login')} sx={{ gap: 1 }} className="profile-menus">
                 <LogoutIcon fontSize="small" /> Logout
               </MenuItem>
             </Menu>

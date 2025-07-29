@@ -73,7 +73,6 @@ body{
   padding: 8px 10px;
   borderRadius: 5px !important;
   border: 1px solid #1c3d5834;
-  outline: none;
   fontSize: 14px !important;
   color: #1C3D58 !important;
 }
@@ -82,7 +81,7 @@ body{
   fontSize: 10px !important;
 }
 .search-input:focus{
-  box-shadow:none;
+  box-shadow:none !important;
   border-color: #1c3d5834;
 }
 .filter-btn{
@@ -159,11 +158,11 @@ body{
 /* Drill Library Page Style goes here */
 .thumbnail-box{
   background-color: #F1F1F1;
-  padding:80px 0px !important;
 }
-.thumbnail-box p{
-  color: #1c3d58a2;
+.thumbnail-box iframe {
+  border-radius: 5px;
 }
+
 .drillcards-heading h5{
   color: #1C3D58;
   font-size: 14px;
@@ -275,8 +274,8 @@ body{
     font-size: 14px;
     color: #6B6B6B;
 }
-/* Setting page style goes here */
 
+/* Setting page style goes here */
 .notification-content-cards .setting-input{
   font-size: 14px;
   color: #6B6B6B;
@@ -285,13 +284,27 @@ body{
   outline: none;
 }
 
+/* Profile page style is goes here */
+.upload-btn:hover{
+    background-color: #F25C05 !important;
+    color: #fff !important;
+}
+
 /* Login page style is goes here */
 .login-section {
   background-color: #1C3D58;
-  min-height: 100vh;
-  padding-top: 50px;
 }
-
+.divider{
+  width: 100px;
+  border: 1px solid #F25C05;
+}
+.login-form-label{
+    color: #1C3D58;
+    font-size: 16px;
+}
+.login-btn:hover{
+  background-color: #1C3D58 !important;
+}
 
 /* media curies goes here */
 @media screen and (max-width: 992px){
@@ -301,7 +314,7 @@ body{
     gap: 20px;
   }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 650px){
   .drillcards-heading h5{
     font-size: 13px !important;
   }
@@ -311,6 +324,17 @@ body{
   .drillcards-heading #delete-icon{
     margin-left: 8px !important;
   }
+  .profile-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-img{
+        width: 100% !important;
+    }
+    .profile-form{
+        width: 100% !important;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 572px){

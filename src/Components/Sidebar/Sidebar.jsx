@@ -9,6 +9,7 @@ import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import SettingsIcon from '@mui/icons-material/Settings';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { NavLink } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ const menuItems = [
   { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications' },
   { text: 'Analytics', icon: <BarChartIcon />, path: '/analytics' },
   { text: 'Settings', icon: <SettingsIcon />, path: '/settings' },
+  { text: 'Profile', icon: <AccountCircleOutlinedIcon />, path: '/profile' },
   { text: 'Logout', icon: <LogoutIcon />, path: '/login' },
 ];
 

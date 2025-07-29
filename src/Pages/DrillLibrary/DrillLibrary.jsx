@@ -9,14 +9,6 @@ import '../../App.css';
 
 
 const DrillLibrary = () => {
-  // const [users, setUsers] = useState(initialUsers);
-  // const [searchTerm, setSearchTerm] = useState('');
-
-  // const filteredUsers = users.filter((user) =>
-  //   user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //   user.email.toLowerCase().includes(searchTerm.toLowerCase())
-  // );
-
   return (
     <div className="container p-0">
       <div className="d-flex justify-content-between align-items-center flex-wrap mb-3">
@@ -49,8 +41,16 @@ const DrillLibrary = () => {
         <div className="row g-3">
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className='p-3 h-100 overview-cards'>
-                <div className='p-5 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
-                  <p>Drill Thumbnail</p>
+                <div className='p-2 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
+                  <iframe
+                    width="100%"
+                    height="230"
+                    src="https://www.youtube.com/watch?v=7OT3vgmBnhA"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className='d-flex justify-content-between align-items-center mt-4 mb-3 drillcards-heading'>
                   <h5>Advanced Shooting Technique</h5>
@@ -70,8 +70,16 @@ const DrillLibrary = () => {
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className='p-3 h-100 overview-cards'>
-                <div className='p-5 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
-                  <p>Drill Thumbnail</p>
+                <div className='p-2 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
+                  <iframe
+                    width="100%"
+                    height="230"
+                    src="https://www.youtube.com/watch?v=vYXNN0o7hNE"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className='d-flex justify-content-between align-items-center mt-4 mb-3 drillcards-heading'>
                   <h5>Ball Handling Basics</h5>
@@ -91,8 +99,16 @@ const DrillLibrary = () => {
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className='p-3 h-100 overview-cards'>
-                <div className='p-5 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
-                  <p>Drill Thumbnail</p>
+                <div className='p-2 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
+                  <iframe
+                    width="100%"
+                    height="230"
+                    src="https://www.youtube.com/watch?v=0UasgLL2raY"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className='d-flex justify-content-between align-items-center mt-4 mb-3 drillcards-heading'>
                   <h5>Defensive Stance</h5>
@@ -112,8 +128,16 @@ const DrillLibrary = () => {
           </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className='p-3 h-100 overview-cards'>
-                <div className='p-5 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
-                  <p>Drill Thumbnail</p>
+                <div className='p-2 d-flex justify-content-center align-items-center rounded-3 thumbnail-box'>
+                  <iframe
+                    width="100%"
+                    height="230"
+                    src="https://www.youtube.com/watch?v=M9Acu3IlURQ"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className='d-flex justify-content-between align-items-center mt-4 mb-3 drillcards-heading'>
                   <h5>Fast Break Fundamentals</h5>
