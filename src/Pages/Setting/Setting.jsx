@@ -2,9 +2,40 @@ import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 import VpnKeyOutlinedIcon from '@mui/icons-material/VpnKeyOutlined';
+import Switch from '@mui/material/Switch';
+import { styled } from '@mui/material/styles';
+
 
 // import css
 import '../../App.css';
+
+const CustomSwitch = styled(Switch)(({ theme }) => ({
+  width: 75,
+  height: 34,
+  padding: 5,
+  '& .MuiSwitch-switchBase': {
+    padding: 6,
+    '&.Mui-checked': {
+      transform: 'translateX(28px)',
+      color: '#fff',
+      '& + .MuiSwitch-track': {
+        backgroundColor: '#1C3D58',
+        opacity: 1,
+      },
+    },
+  },
+  '& .MuiSwitch-thumb': {
+    width: 22,
+    height: 22,
+    color: 'white'
+  },
+  '& .MuiSwitch-track': {
+    borderRadius: 20,
+    backgroundColor: '#1c3d5832',
+    opacity: 1,
+  },
+}));
+
 
 const Setting = () => {
 
@@ -28,7 +59,7 @@ const Setting = () => {
                 <p className='mb-2'>Enable push notifications for all users</p>
               </div>
               <div>
-                <span className='ps-2 pe-2 pt-1 pb-1 rounded-5 fw-bold' style={{backgroundColor:'#F25C05', color:'#ffffff', fontSize: 12}}>Sent</span>
+                <CustomSwitch defaultChecked />
               </div>
             </div>
             <div className='d-flex justify-content-between border-bottom p-3 mt-3'>
@@ -37,7 +68,7 @@ const Setting = () => {
                 <p className='mb-2'>Enable user behavior tracking and analytics</p>
               </div>
               <div>
-                <span className='ps-2 pe-2 pt-1 pb-1 rounded-5 fw-bold' style={{backgroundColor:'#F25C05', color:'#ffffff', fontSize: 12}}>Sent</span>
+                <CustomSwitch defaultChecked />
               </div>
             </div>
             <div className='d-flex justify-content-between border-bottom p-3 mt-3'>
@@ -46,7 +77,7 @@ const Setting = () => {
                 <p className='mb-2'>Automatically backup user data daily</p>
               </div>
               <div>
-                <span className='ps-2 pe-2 pt-1 pb-1 rounded-5 fw-bold' style={{backgroundColor:'#F25C05', color:'#ffffff', fontSize: 12}}>Sent</span>
+                <CustomSwitch />
               </div>
             </div>
             <div className='d-flex justify-content-between p-3 pb-2 mt-3'>
@@ -55,7 +86,7 @@ const Setting = () => {
                 <p className='mb-2'>Temporarily disable the app for maintenance</p>
               </div>
               <div>
-                <span className='ps-2 pe-2 pt-1 pb-1 rounded-5 fw-bold' style={{backgroundColor:'#F25C05', color:'#ffffff', fontSize: 12}}>Sent</span>
+                <CustomSwitch/>
               </div>
             </div>
         </div>
@@ -97,35 +128,36 @@ const Setting = () => {
               </div>
             </div>
 
-            {/* System Information cards */}
-            <div className='row g-4 mt-4 ms-0 me-0 ps-1 pe-1 overview-cards'>
-              <h4 className='fs-5 mb-0'>System Information</h4>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <div className='p-3 pt-2 h-100 Analytics-card'>
-                    <p className='mb-1'>Version</p>
-                    <h5 className='fw-bold'>v2.1.0</h5>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <div className='p-3 pt-2 h-100 Analytics-card'>
-                    <p className='mb-1'>Last Updated</p>
-                    <h5 className='fw-bold'>Dec 15, 2023</h5>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <div className='p-3 pt-2 h-100 Analytics-card'>
-                    <p className='mb-1'>Environment</p>
-                    <h5 className='fw-bold'>Production</h5>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <div className='p-2 pt-2 h-100 Analytics-card'>
-                    <p className='mb-1'>Server Status</p>
-                    <h5 className='fw-bold'>Healthy</h5>
-                </div>
-              </div>  
-            </div>
         </div>
+      </div>
+
+      {/* System Information cards */}
+      <div className='row g-4 mt-4 ms-0 me-0 ps-1 pe-1 overview-cards'>
+        <h4 className='fs-5 mb-0'>System Information</h4>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
+          <div className='p-3 pt-2 h-100 Analytics-card'>
+              <p className='mb-1'>Version</p>
+              <h5 className='fw-bold'>v2.1.0</h5>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
+          <div className='p-3 pt-2 h-100 Analytics-card'>
+              <p className='mb-1'>Last Updated</p>
+              <h5 className='fw-bold'>Dec 15, 2023</h5>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
+          <div className='p-3 pt-2 h-100 Analytics-card'>
+              <p className='mb-1'>Environment</p>
+              <h5 className='fw-bold'>Production</h5>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
+          <div className='p-2 pt-2 h-100 Analytics-card'>
+              <p className='mb-1'>Server Status</p>
+              <h5 className='fw-bold'>Healthy</h5>
+          </div>
+        </div>  
       </div>
     </div>
   );
